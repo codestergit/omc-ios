@@ -14,11 +14,11 @@
   - Follow the Step 1, Step 3 through Step 8 to configure OMC SDK from [Configure Responsys][PushRef]
 
 ### Configure Oracle Infinity
-To configure Infinity, application needs the Oracle.plist. It contains the Infinity configuration.
-  - Oracle.plist
-    - Download the [Oracle.plist][OraclePlistRef]
+To configure Infinity in the app, you will need the `oracle.plist` file which contains the Infinity configuration.
+  - oracle.plist
+    - Download the [oracle.plist][OraclePlistRef]
     - Drag and Drop it into your application Xcode Project.
-    - Open the Oracle.plist and change the value of `ora_dc_account_guid` to the value of your team/configuration in Infinity.
+    - Open the `oracle.plist` and change the value of `ora_dc_account_guid` to the value of your team/configuration in Infinity.
         - How to get the `ora_dc_account_guid`:
             - login to [Infinity][InfinityRef]
             - Select the team (if multiple teams are listed).
@@ -40,4 +40,4 @@ To configure Infinity, application needs the Oracle.plist. It contains the Infin
 [PushRef]: <https://docs.oracle.com/cloud/latest/marketingcs_gs/OMCFB/ios/step-by-step/>
 [InfinityRef]: <http://app.oracleinfinity.com/>
 [StreamRef]: <https://docs.oracle.com/cloud/latest/marketingcs_gs/OMCHA/Help/streams.htm>
-[OraclePlistRef]: <https://github.com/pushio/OMCSDK_iOS/blob/master/Oracle.plist>
+[OraclePlistRef]: <https://github.com/pushio/omc-ios/blob/master/oracle.plist>
