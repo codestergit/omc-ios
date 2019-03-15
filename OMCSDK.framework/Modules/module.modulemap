@@ -1,0 +1,6 @@
+framework module OMCSDK {
+  umbrella header "OMCSDK.h"
+
+  export *
+  module * { export * }
+}
