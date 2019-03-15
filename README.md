@@ -41,7 +41,7 @@ To configure Infinity, application need to have Oracle.plist. It contains the in
 ``` 
   - Stream should show the event i.e.: `$PurchasedCart` captured along with other metadata.
   
-  ## Oracle Marketing Cloud SDK for iOS Documentation
+  ## Oracle Marketing Cloud SDK for iOS: Documentation
 * [Integration Guide][Docs]
 
 [PushRef]: <https://docs.oracle.com/cloud/latest/marketingcs_gs/OMCFB/ios/step-by-step/>
