@@ -40,4 +40,4 @@ To configure Infinity in the app, you will need the `oracle.plist` file which co
 [PushRef]: <https://docs.oracle.com/cloud/latest/marketingcs_gs/OMCFB/ios/step-by-step/>
 [InfinityRef]: <http://app.oracleinfinity.com/>
 [StreamRef]: <https://docs.oracle.com/cloud/latest/marketingcs_gs/OMCHA/Help/streams.htm>
-[OraclePlistRef]: <https://github.com/pushio/omc-ios/blob/master/oracle.plist>
+[OraclePlistRef]: <https://raw.githubusercontent.com/pushio/omc-ios/master/oracle.plist>
