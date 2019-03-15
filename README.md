@@ -1,7 +1,4 @@
-# OMC SDK
-
-
-OMC SDK is full fledged Push SDK with RRT, Geofence, Beacon events sent to Infinity.
+# Oracle Marketing Cloud SDK for iOS
 
 ## Configuration
 
@@ -14,11 +11,10 @@ OMC SDK is full fledged Push SDK with RRT, Geofence, Beacon events sent to Infin
     - Ensure that in application target build settings, Framework Search Path is set to correct location of OMC.framework.
     
 ### Configure Responsys
+  - Follow the Step 1, Step 3 through Step 8 to configure OMC SDK from [Configure Responsys][PushRef]
 
-  - Follow the Step 1, Step 3 to Step 8 configure OMC SDK from [Configure Responsys][PushRef]
-
-### Configure Infinity
-To configure Infinity, application need to have Oracle.plist. It contains the infinity configuration.
+### Configure Oracle Infinity
+To configure Infinity, application needs the Oracle.plist. It contains the Infinity configuration.
   - Oracle.plist
     - Download the [Oracle.plist][OraclePlistRef]
     - Drag and Drop it into your application Xcode Project.
@@ -31,22 +27,17 @@ To configure Infinity, application need to have Oracle.plist. It contains the in
 ### Test
 
   - Login in [Infinity][InfinityRef]
-  - Select Stream
+  - Select Streams
     + [Streams reference][StreamRef]
   - Start the Stream
- - Trigger event e.g.:
+  - Trigger event e.g.:
 
-```swift
-[[PushIOManager sharedInstance] trackEvent:@"$PurchasedCart" properties:@{@"pid":@"165SFDFD121", @"pname":@"Shirt"}];
-``` 
-  - Stream should show the event i.e.: `$PurchasedCart` captured along with other metadata.
-  
-  ## Oracle Marketing Cloud SDK for iOS: Documentation
-* [Integration Guide][Docs]
+   ```swift
+     [[PushIOManager sharedInstance] trackEvent:@"$PurchasedCart" properties:@{@"pid":@"165SFDFD121", @"pname":@"Shirt"}];
+   ``` 
+  - Streams should show the event i.e.: `$PurchasedCart` captured along with other metadata.
 
 [PushRef]: <https://docs.oracle.com/cloud/latest/marketingcs_gs/OMCFB/ios/step-by-step/>
 [InfinityRef]: <http://app.oracleinfinity.com/>
 [StreamRef]: <https://docs.oracle.com/cloud/latest/marketingcs_gs/OMCHA/Help/streams.htm>
-[OraclePlistRef]: <https://raw.githubusercontent.com/pushio/omc-ios/master/oracle.plist>
-[Docs]: <https://docs.oracle.com/cloud/latest/marketingcs_gs/OMCFB/ios/>
-
+[OraclePlistRef]: <https://github.com/pushio/OMCSDK_iOS/blob/master/Oracle.plist>
